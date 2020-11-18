@@ -14,6 +14,10 @@ The compiler will then translate the C++ program hello.cpp and create a machine 
 <code>./a.out</code>
 The executable file will then be loaded to computer memory and the computer’s CPU (Central Processing Unit) executes the program one instruction at a time.
 
+### Naming Executable
+
+<code>g++ hello.cpp -o hello</code>
+
 ## 1) Output
 
 High five! We just got your first program to run.
