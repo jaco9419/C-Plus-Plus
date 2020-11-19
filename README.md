@@ -2,6 +2,18 @@
 This is an educative repository to practice C++. It may include concepts and small projects.
 Concepts are ordered from last to first. Most of this information is taken directly from Codecadem's C++ learning course.
 
+## 5) Debugging
+
+In C++, there are many different ways of classifying errors, but they can be boil down to four categories:
+
+<strong>-Compile-time errors:</strong> Errors found by the compiler.
+
+<strong>-Link-time errors:</strong> Errors found by the linker when it is trying to combine object files into an executable program.
+
+<strong>-Run-time errors:</strong> Errors found by checks in a running program.
+
+<strong>-Logic errors:</strong> Errors found by the programmer looking for the causes of erroneous results.
+
 ## 4) User Input
 
 Another way to assign a value to a variable is through user input. A lot of times, we want the user of the program to enter information for the program.
