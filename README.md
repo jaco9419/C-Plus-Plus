@@ -2,6 +2,39 @@
 This is an educative repository to practice C++. It may include concepts and small projects.
 Concepts are ordered from last to first. Most of this information is taken directly from Codecadem's C++ learning course.
 
+## 4) User Input
+
+Another way to assign a value to a variable is through user input. A lot of times, we want the user of the program to enter information for the program.
+
+We have cout for output, and there is something called cin that’s used for input!
+
+<code>std::cout << "Enter your password: ";</code>
+<code>std::cin >> password;</code>
+
+The name cin refers to the standard input stream (pronounced “see-in”, for character input). The second operand of the >> operator (“get from”) specifies where that input goes.
+
+## 3) Variables and data types
+
+In C++ you declare a variable by typing its data type before it. They can be:
+
+-<code>int</code>: integer numbers
+
+-<code>double</code>: floating-point numbers
+
+-<code>char</code>: individual characters
+
+-<code>string</code>: a sequence of characters
+
+-<code>bool</code>: true/false values
+
+<code>int score;</code>
+
+The int is the type of the variable.
+The score is the name of the variable.
+The ; is how we end a statement.
+
+In C++, variable names consist only of upper/lower case letters, digits, and/or underscores. C++ is known as a strongly typed language.
+
 ## 2) Compile and Execute
 
 <strong>Compile:</strong> A computer can only understand machine code. A compiler can translate the C++ programs that we write into machine code. To compile a file, you need to type g++ followed by the file name in the terminal:
