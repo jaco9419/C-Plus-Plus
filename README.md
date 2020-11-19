@@ -12,6 +12,19 @@ We have cout for output, and there is something called cin that’s used for inp
 <code>std::cin >> password;</code>
 
 The name cin refers to the standard input stream (pronounced “see-in”, for character input). The second operand of the >> operator (“get from”) specifies where that input goes.
+<pre>
+<code>#include <iostream>
+
+int main() {
+  
+  int tip = 0;
+  
+  std::cout << "Enter tip amount: ";
+  std::cin >> tip;
+  std::cout << "You paid " << tip << " dollars.\n";
+  
+}</code>
+</pre>
 
 ## 3) Variables and data types
 
