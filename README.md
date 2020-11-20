@@ -2,6 +2,45 @@
 This is an educative repository to practice C++. It may include concepts and small projects.
 Concepts are ordered from last to first. Most of this information is taken directly from Codecadem's C++ learning course.
 
+## 6) Adding and Removing Elements
+Often, we start with a vector that’s either empty or a certain length. As we read or compute data we want, we can grow the vector as needed.
+
+<code>.push_back()</code>
+To add a new element to the “back”, or end of the vector, we can use the .push_back() function.
+
+For example, suppose we have a vector called dna with three letter codes of nucleotides:
+
+<code>std::vector<std::string> dna = {"ATG", "ACG"};</code>
+  
+It would look like:
+
+ATG, ACG
+
+We can add elements using .push_back():
+
+<code>dna.push_back("GTG");</code><br>
+<code>dna.push_back("CTG");</code>
+
+So now dna would look like:
+
+ATG, ACG, GTG, CTG
+
+<code>.pop_back()</code>
+
+You can also remove elements from the “back” of the vector using .pop_back().
+
+<code>dna.pop_back();</code>
+
+Notice how nothing goes inside the parentheses.
+
+The vector would now look like:
+
+ATG, ACG, GTG
+
+because CTG is removed!
+
+Note: If you have programmed in other languages, be aware that .pop_back() has no return value in C++.
+
 ## 5) Debugging
 
 In C++, there are many different ways of classifying errors, but they can be boil down to four categories:
