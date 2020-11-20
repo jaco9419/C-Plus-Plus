@@ -2,6 +2,23 @@
 This is an educative repository to practice C++. It may include concepts and small projects.
 Concepts are ordered from last to first. Most of this information is taken directly from Codecadem's C++ learning course.
 
+## 8) Random Numbers
+
+<pre>
+<code>#include <iostream>
+#include <stdlib.h> // Not sure if this
+#include <time.h> // and this are necessary
+
+int main() {
+  
+  // This seeds the random number generator:
+  srand (time(NULL));
+  // Use rand() below to initialize the_amazing_random_number
+  int the_amazing_random_number = rand() % 80;
+  std::cout << the_amazing_random_number;
+}</code>
+</pre>
+
 ## 7) Adding and Removing Elements
 Often, we start with a vector that’s either empty or a certain length. As we read or compute data we want, we can grow the vector as needed.
 
