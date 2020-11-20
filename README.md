@@ -2,7 +2,7 @@
 This is an educative repository to practice C++. It may include concepts and small projects.
 Concepts are ordered from last to first. Most of this information is taken directly from Codecadem's C++ learning course.
 
-## 6) Adding and Removing Elements
+## 7) Adding and Removing Elements
 Often, we start with a vector that’s either empty or a certain length. As we read or compute data we want, we can grow the vector as needed.
 
 <code>.push_back()</code>
@@ -40,6 +40,22 @@ ATG, ACG, GTG
 because CTG is removed!
 
 Note: If you have programmed in other languages, be aware that .pop_back() has no return value in C++.
+
+## 6) Vectors
+
+Vectors are a sequence of elements that you can access by an index.
+
+<code>std::vector<int> even = {2, 4, 6, 8, 10};</code>
+  
+The first index in a vector is 0.
+
+Some of the functions that come with vectors:
+
+<code>.push_back()</code><br>
+<code>.pop_back()</code><br>
+<code>.size()</code><br>
+
+We can use a for loop to iterate through a vector.
 
 ## 5) Debugging
 
