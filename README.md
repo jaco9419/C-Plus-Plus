@@ -2,6 +2,28 @@
 This is an educative repository to practice C++. It may include concepts and small projects.
 Concepts are ordered from last to first. Most of this information is taken directly from Codecadem's C++ learning course.
 
+## 11) Inline Functions
+
+Once you set foot in the wild of C++ development, you may encounter the term “inline functions” with a couple different meanings. An inline function is a function definition, usually in a header file, qualified by inline like this:
+
+<pre><code>inline 
+void eat() {
+ 
+  std::cout << "nom nom\n";
+ 
+}</code></pre>
+
+Using inline advises the compiler to insert the function’s body where the function call is, which sometimes helps with execution speed (and sometimes hinders execution speed). If you do use it, we recommend testing how it affects the execution speed of your program. The bottom line is inline is something you’ll probably encounter, but may never use.
+
+However, you will sometimes also hear about “inline functions” that are just member functions (i.e. functions inside of classes — we’ll explain classes later) which have been defined and declared in a single line in a header file because the function body is so short:
+
+<pre><code>// cookie_functions.hpp
+ 
+// eat() belongs to the Cookie class:
+void Cookie::eat() {std::cout << "nom nom\n";} </code></pre>
+
+Please note that you should ALWAYS add the inline keyword if you are inlining functions in a header (unless you are dealing with member functions, which are automatically inlined for you).
+
 ## 10) Getting a Header Yourself
 
 If your program keeps growing, you may have to scroll through many declarations before you see main(). That doesn’t seem like the best way to do things. Plus you don’t want to keep declaring the same functions over and over for different files — making changes would be incredibly tiresome!
