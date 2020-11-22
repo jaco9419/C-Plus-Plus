@@ -2,6 +2,32 @@
 This is an educative repository to practice C++. It may include concepts and small projects.
 Concepts are ordered from last to first. Most of this information is taken directly from Codecadem's C++ learning course.
 
+## 12) Function Overload!
+
+In a process known as function overloading, you can give multiple C++ functions the same name. Just make sure at least one of these conditions is true:
+
+Each has different type parameters.<br>
+Each has a different number of parameters.
+
+<pre><code>void print_cat_ears(char let) {
+  std::cout << " " << let << "   " << let << " " << "\n";
+  std::cout << let << let << let << " " << let << let << let << "\n";
+}
+ 
+void print_cat_ears(int num) {
+  std::cout << " " << num << "   " << num << " " << "\n";
+  std::cout << num << num << num << " " << num << num << num << "\n";
+}</code></pre>
+
+<pre><code>print_cat_ears('A');
+print_cat_ears(4);</code></pre>
+
+<pre><code> A   A 
+AAA AAA
+ 
+ 4   4
+444 444</code></pre>
+
 ## 11) Inline Functions
 
 Once you set foot in the wild of C++ development, you may encounter the term “inline functions” with a couple different meanings. An inline function is a function definition, usually in a header file, qualified by inline like this:
