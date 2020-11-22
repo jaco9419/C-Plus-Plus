@@ -2,7 +2,19 @@
 This is an educative repository to practice C++. It may include concepts and small projects.
 Concepts are ordered from last to first. Most of this information is taken directly from Codecadem's C++ learning course.
 
-## 12) Function Overload!
+## 13) Function Templates
+So how do we implement templates with actual code? Unlike regular functions, templates are entirely created in header files.
+
+Templates let us choose the type implementation right when you call the function. The type we choose may apply to the return type, a parameter type, or both.
+
+<pre><code>template <typename T>
+T get_smallest(T num1, T num2) {
+  
+  return num2 < num1? num2 : num1;
+  
+}</code></pre>
+
+## 12) Function Overload
 
 In a process known as function overloading, you can give multiple C++ functions the same name. Just make sure at least one of these conditions is true:
 
