@@ -2,6 +2,78 @@
 This is an educative repository to practice C++. It may include concepts and small projects.
 Concepts are ordered from last to first. Most of this information is taken directly from Codecadem's C++ learning course.
 
+## 14) Class Members
+An empty class is pretty useless. Classes are designed to bring together related information and functionality — time to add stuff inside!
+
+Components of a class are called class members. Just like you can get a string’s length using .length(), you can access class members using the dot operator (object.class_member).
+
+There are two types of class members:
+
+Attributes, also known as member data, consist of information about an instance of the class.<br>
+Methods, also known as member functions, are functions that you can use with an instance of the class. We use a . before method names to distinguish them from regular functions.<br>
+We encapsulate — or enclose for simpler user access — attributes and methods in a class like this:
+
+<pre><code>class City {
+ 
+  // attribute
+  int population;
+ 
+// we'll explain 'public' later
+public:
+  // method
+  void add_resident() {
+    population++;
+  }
+ 
+};</code></pre>
+
+Unless we have a mostly empty class, it’s common to split function declarations from definitions. We declare methods inside the class (in a header), then define the methods outside the class (in a .cpp file of the same name).
+
+How can we define methods outside a class? We can do this using ClassName:: before the method name to indicate its class like this:
+
+<pre><code>int City::get_population() {
+  return population;
+}</code></pre>
+
+Unlike with regular functions, we need to include the header file in the .cpp file where we define the methods.
+
+Note: We must declare a method inside the class if we want to define it outside.
+
+music.cpp
+
+<pre><code>#include < iostream>
+#include "song.hpp"
+
+int main() {
+
+}</code></pre>
+
+song.hpp
+
+<pre><code>#include < string>
+
+// add the Song class here:
+class Song {
+  std::string title;
+
+  public:
+    void add_title(std::string new_title);
+    std::string get_title();
+};</code></pre>
+
+song.cpp
+
+<pre><code>#include "song.hpp"
+
+// add Song method definitions here:
+void Song::add_title(std::string new_title) {
+  title = new_title;
+};
+
+std::string Song::get_title() {
+  return title;
+};</code></pre>
+
 ## 13) Function Templates
 So how do we implement templates with actual code? Unlike regular functions, templates are entirely created in header files.
 
