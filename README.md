@@ -46,6 +46,11 @@ music.cpp
 
 int main() {
 
+  Song electric_relaxation;
+  electric_relaxation.add_title("Electric Relaxation");
+
+  std::cout << electric_relaxation.get_title() << std::endl;
+  
 }</code></pre>
 
 song.hpp
