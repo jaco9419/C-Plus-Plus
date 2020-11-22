@@ -2,6 +2,59 @@
 This is an educative repository to practice C++. It may include concepts and small projects.
 Concepts are ordered from last to first. Most of this information is taken directly from Codecadem's C++ learning course.
 
+## 9) Multi-File Programs
+
+main.cpp
+
+<pre><code>#include < iostream >
+#include < cmath >
+
+// Add declarations here:
+double average(double num1, double num2);
+int tenth_power(int num);
+bool is_palindrome(std::string text);
+
+int main() {
+  
+  std::cout << is_palindrome("racecar") << "\n";
+  std::cout << tenth_power(3) << "\n";
+  std::cout << average(8.0, 19.0) << "\n";
+  
+}</code></pre>
+
+my_functions.cpp
+
+<pre><code>#include < iostream >
+#include < cmath >
+
+// Add definitions here:
+double average(double num1, double num2) {
+  return (num1 + num2) / 2;
+}
+
+int tenth_power(int num) {
+  return pow(num, 10);
+}
+
+bool is_palindrome(std::string text) {
+  std::string reversed_text = "";
+  
+  for (int i = text.size() - 1; i >= 0; i--) {
+    reversed_text += text[i];
+  }
+  
+  if (reversed_text == text) {
+    return true;
+  }
+  
+  return false;
+}</code></pre>
+
+Terminal:
+
+<code>$ g++ main.cpp my_functions.cpp</code>
+
+
 ## 8) Random Numbers
 
 <pre>
