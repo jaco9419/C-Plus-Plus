@@ -4,6 +4,17 @@ Concepts are ordered from last to first. Most of this information is taken direc
 
 <hr>
 
+## 20) Dereference
+So now we learned what a pointer is and how to create one, but is there a way to obtain the value pointed to by the pointer?
+
+The asterisk sign * a.k.a. the dereference operator is used to obtain the value pointed to by a variable. This can be done by preceding the name of a pointer variable with *.
+
+int blah = *ptr;<br>
+The double meaning of the * symbol can be tricky at first, so make sure to note:
+
+When * is used in a declaration, it is creating a pointer.<br>
+When * is not used in a declaration, it is a dereference operator.
+
 ## 19) Pointers
 In C++, a pointer variable is mostly the same as other variables, which can store a piece of data. Unlike normal variables, which store a value (such as an int, double, char), a pointer stores a memory address.
 
@@ -594,6 +605,10 @@ In between the curly braces is what we are going to focus on for now.
 <hr>
 
 ## Some Terms:
+
+#### Null Pointer
+nullptr is a new keyword introduced in C++11. It provides a typesafe pointer value representing an empty pointer. In older C/C++ code, NULL was used for this purpose.<br>
+<code>int* ptr = nullptr;</code>
 
 #### Pass-By-Reference
 It refers to passing parameters to a function by using references. When called, the function can modify the value of the arguments by using the reference passed in.
