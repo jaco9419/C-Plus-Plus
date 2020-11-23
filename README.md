@@ -144,7 +144,7 @@ So how do we implement templates with actual code? Unlike regular functions, tem
 
 Templates let us choose the type implementation right when you call the function. The type we choose may apply to the return type, a parameter type, or both.
 
-<pre><code>template <typename T>
+<pre><code>template < typename T >
 T get_smallest(T num1, T num2) {
   
   return num2 < num1? num2 : num1;
