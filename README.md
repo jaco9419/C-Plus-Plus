@@ -2,6 +2,58 @@
 This is an educative repository to practice C++. It may include concepts and small projects.
 Concepts are ordered from last to first. Most of this information is taken directly from Codecadem's C++ learning course.
 
+<hr>
+
+## 17) Pass-By-Reference
+So what’s a good use case for references? Let’s take a look.
+
+Previously, when we passed parameters to a function, we used normal variables and that’s known as pass-by-value. But because the variables passed into the function are out of scope, we can’t actually modify the value of the arguments.
+
+Pass-by-reference refers to passing parameters to a function by using references. When called, the function can modify the value of the arguments by using the reference passed in.
+
+This allows us to:
+
+Modify the value of the function arguments.<br>
+Avoid making copies of a variable/object for performance reasons.
+
+The following code shows an example of pass-by-reference. The reference parameters are initialized with the actual arguments when the function is called:
+
+<pre><code>void swap_num(int &i, int &j) {
+ 
+  int temp = i;
+  i = j;
+  j = temp;
+ 
+}
+ 
+int main() {
+ 
+  int a = 100;
+  int b = 200;
+ 
+  swap_num(a, b);
+ 
+  std::cout << "A is " << a << "\n";
+  std::cout << "B is " << b << "\n";
+ 
+}</code></pre>
+
+Notice that the int &i and int &j are the parameters of the function swap_num().
+
+When swap_num() is called, the values of the variables a and b will be modified because they are passed by reference. The output will be:
+
+A is 200<br>
+B is 100<br>
+
+Suppose we didn’t pass-by-reference here and have the parameters as simply int i and int j in the swap_num() function, then i and j would swap, but a and b wouldn’t be modified.
+
+And the output will then be:
+
+A is 100<br>
+B is 200<br>
+
+To reiterate, using references as parameters allows us to modify the arguments’ values. This can be very useful in a lot cases.
+
 ## 16) Destructors
 So far, you’ve learned how to create and use objects. But there’s another part of the object lifecycle we need to cover: how to destroy them! Muahahaha.
 
@@ -493,3 +545,13 @@ In between the curly braces is what we are going to focus on for now.
 -<code>"Hello World!\n"</code> is what’s being outputted here. You need double quotes around text. The \n is a special character that indicates a new line.
 
 -<code>;</code> is a punctuation that tells the computer that you are at the end of a statement. It is similar to a period in a sentence.
+
+<hr>
+
+## Some Terms:
+
+#### Pass-By-Reference
+It refers to passing parameters to a function by using references. When called, the function can modify the value of the arguments by using the reference passed in.
+
+#### Pass-By-Value
+When we passed parameters to a function, we used normal variables and that’s known as pass-by-value. But because the variables passed into the function are out of scope, we can’t actually modify the value of the arguments.
