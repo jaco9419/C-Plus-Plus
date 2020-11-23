@@ -2,6 +2,23 @@
 This is an educative repository to practice C++. It may include concepts and small projects.
 Concepts are ordered from last to first. Most of this information is taken directly from Codecadem's C++ learning course.
 
+## 16) Destructors
+So far, you’ve learned how to create and use objects. But there’s another part of the object lifecycle we need to cover: how to destroy them! Muahahaha.
+
+It’s actually far less nefarious than it sounds; object destruction is really about tidying up and preventing memory leaks. A destructor is a special method that handles object destruction. Like a constructor, it has the same name as the class and no return type, but is preceded by a ~ operator and takes no parameters:
+
+<pre><code>City::~City() {
+ 
+  // any final cleanup
+ 
+}</code></pre>
+
+Inside you add any housekeeping that needs to happen before the object is destroyed. You generally won’t need to call a destructor; the destructor will be called automatically in any of the following scenarios:
+
+The object moves out of scope.<br>
+The object is explicitly deleted.<br>
+When the program ends.
+
 ## 15) Constructors
 Is there a way to give an object some data right when it gets created? We’re so glad you asked!
 
