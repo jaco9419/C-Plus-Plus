@@ -10,9 +10,7 @@ A constructor is a special kind of method that lets you decide how the objects o
 If we want to make sure each City is created with a name and a population, we can use parameters and a member initializer list to initialize attributes to values passed in:
 
 // city.hpp
-<pre><code>#include "city.hpp"
- 
-class City {
+<pre><code>class City {
  
   std::string name;
   int population;
@@ -23,7 +21,9 @@ public:
 };</code></pre>
  
 // city.cpp
-<pre><code>City::City(std::string new_name, int new_pop)
+<pre><code>#include "city.hpp"
+
+City::City(std::string new_name, int new_pop)
   // members get initialized to values passed in 
   : name(new_name), population(new_pop) {}
 You could also write the definition like this:
