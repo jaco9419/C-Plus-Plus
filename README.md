@@ -4,6 +4,27 @@ Concepts are ordered from last to first. Most of this information is taken direc
 
 <hr>
 
+## 18) Memory Address
+So we haved learned about references (aliases), which are created by using the & symbol in a variable declaration. But the & sign can have another meaning.
+
+The “address of” operator, &, is used to get the memory address, the location in the memory, of an object.
+
+Suppose we declare a variable called:
+
+int porcupine_count = 3;<br>
+Have you wondered where the variable porcupine_count is stored on the computer? We can find out by printing out &porcupine_count:
+
+std::cout << &porcupine_count << "\n";<br>
+It will return something like:
+
+0x7ffd7caa5b54<br>
+This is a memory address represented in hexadecimal. A memory address is usually denoted in hexadecimal instead of binary for readability and conciseness.
+
+The double meaning of the & symbol can be tricky at first, so make sure to note:
+
+When & is used in a declaration, it is a reference operator.<br>
+When & is not used in a declaration, it is an address operator.
+
 ## 17) Pass-By-Reference
 So what’s a good use case for references? Let’s take a look.
 
