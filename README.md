@@ -4,6 +4,23 @@ Concepts are ordered from last to first. Most of this information is taken direc
 
 <hr>
 
+## Some Terms:
+
+#### String insertion operator
+<<
+
+#### Null Pointer
+nullptr is a new keyword introduced in C++11. It provides a typesafe pointer value representing an empty pointer. In older C/C++ code, NULL was used for this purpose.<br>
+<code>int* ptr = nullptr;</code>
+
+#### Pass-By-Reference
+It refers to passing parameters to a function by using references. When called, the function can modify the value of the arguments by using the reference passed in.
+
+#### Pass-By-Value
+When we passed parameters to a function, we used normal variables and that’s known as pass-by-value. But because the variables passed into the function are out of scope, we can’t actually modify the value of the arguments.
+
+<hr>
+
 ## 20) Dereference
 So now we learned what a pointer is and how to create one, but is there a way to obtain the value pointed to by the pointer?
 
@@ -603,15 +620,3 @@ In between the curly braces is what we are going to focus on for now.
 -<code>;</code> is a punctuation that tells the computer that you are at the end of a statement. It is similar to a period in a sentence.
 
 <hr>
-
-## Some Terms:
-
-#### Null Pointer
-nullptr is a new keyword introduced in C++11. It provides a typesafe pointer value representing an empty pointer. In older C/C++ code, NULL was used for this purpose.<br>
-<code>int* ptr = nullptr;</code>
-
-#### Pass-By-Reference
-It refers to passing parameters to a function by using references. When called, the function can modify the value of the arguments by using the reference passed in.
-
-#### Pass-By-Value
-When we passed parameters to a function, we used normal variables and that’s known as pass-by-value. But because the variables passed into the function are out of scope, we can’t actually modify the value of the arguments.
