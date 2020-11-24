@@ -6,6 +6,12 @@ Concepts are ordered from last to first. Most of this information is taken direc
 
 ## Some Terms:
 
+#### Input stream object
+cin
+
+#### String insertion operator
+>>
+
 #### String insertion operator
 <<
 
