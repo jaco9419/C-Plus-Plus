@@ -6,6 +6,9 @@ Concepts are ordered from last to first. Most of this information is taken direc
 
 ## Some Terms:
 
+#### Function Prototyping
+Declaring your function before main(), calling it inside it and defining it after it.
+
 #### Input stream object
 cin
 
