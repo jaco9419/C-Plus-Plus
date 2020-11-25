@@ -6,7 +6,8 @@ Concepts are ordered from last to first. Most of this information is taken direc
 
 ## Some Terms:
 
-#### Binary scope resolution operator ::
+#### Binary scope resolution operator 
+::
 
 #### Function Prototyping
 Declaring your function before main(), calling it inside it and defining it after it.
@@ -31,6 +32,22 @@ It refers to passing parameters to a function by using references. When called, 
 When we passed parameters to a function, we used normal variables and that’s known as pass-by-value. But because the variables passed into the function are out of scope, we can’t actually modify the value of the arguments.
 
 <hr>
+
+## Recursion
+
+<pre><code>#include < iostream>
+
+int factorialFinder(int x) {
+ if(x == 1) { // This is the Base Case
+  return 1;
+ } else {
+  return x * factorialFinder(x - 1); // This is what makes the value of x decrease by one each time the function is called till it hits the base case
+ }
+}
+
+int main() {
+ std::cout << factorialFinder(5) << std::endl;
+}</code></pre>
 
 ## 20) Dereference
 So now we learned what a pointer is and how to create one, but is there a way to obtain the value pointed to by the pointer?
