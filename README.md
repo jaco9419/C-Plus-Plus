@@ -15,11 +15,9 @@ Declaring your function before main(), calling it inside it and defining it afte
 #### Input stream object
 cin
 
-#### String insertion operator
->>
+#### String extraction operator >>
 
-#### String insertion operator
-<<
+#### String insertion operator <<
 
 #### Null Pointer
 nullptr is a new keyword introduced in C++11. It provides a typesafe pointer value representing an empty pointer. In older C/C++ code, NULL was used for this purpose.<br>
@@ -200,7 +198,7 @@ int main() {
  
 }</code></pre>
 
-<strong>Note:</strong> The first one (int *) passes a pointer-to-integer by value; the second (int &) passes an integer by reference. Both methods can be used to implement abstract "reference semantics", but in C++ you should use actual references when possible.
+<strong>Note:</strong> The second one (int *) passes a pointer-to-integer by value; the first (int &) passes an integer by reference. Both methods can be used to implement abstract "reference semantics", but in C++ you should use actual references when possible.
 
 When you use pointers to implement reference semantics, you pass by value a pointer to the object that you want to refer to, and you dereference the pointer to obtain the actual object reference. In C, where you have no references in the language, that's the only way to implement reference semantics, but in C++ you have actual reference types in the language for this purpose.
 
