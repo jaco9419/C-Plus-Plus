@@ -200,6 +200,10 @@ int main() {
  
 }</code></pre>
 
+<strong>Note:</strong> The first one (int *) passes a pointer-to-integer by value; the second (int &) passes an integer by reference. Both methods can be used to implement abstract "reference semantics", but in C++ you should use actual references when possible.
+
+When you use pointers to implement reference semantics, you pass by value a pointer to the object that you want to refer to, and you dereference the pointer to obtain the actual object reference. In C, where you have no references in the language, that's the only way to implement reference semantics, but in C++ you have actual reference types in the language for this purpose.
+
 ## 16) Destructors
 So far, you’ve learned how to create and use objects. But there’s another part of the object lifecycle we need to cover: how to destroy them! Muahahaha.
 
