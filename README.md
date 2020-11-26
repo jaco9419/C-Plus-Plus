@@ -178,6 +178,28 @@ B is 200<br>
 
 To reiterate, using references as parameters allows us to modify the arguments’ values. This can be very useful in a lot cases.
 
+Another option is using * instead of & when setting the parameters, but a few things change. You also need the * when using your variable inside the function and you'll need & when passing the parameters to the function:
+
+<pre><code>void swap_num(int *i, int *j) {
+ 
+  int temp = *i;
+  *i = j;
+  *j = temp;
+ 
+}
+ 
+int main() {
+ 
+  int a = 100;
+  int b = 200;
+ 
+  swap_num(a, b);
+ 
+  std::cout << "A is " << &a << "\n";
+  std::cout << "B is " << &b << "\n";
+ 
+}</code></pre>
+
 ## 16) Destructors
 So far, you’ve learned how to create and use objects. But there’s another part of the object lifecycle we need to cover: how to destroy them! Muahahaha.
 
