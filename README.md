@@ -31,6 +31,21 @@ When we passed parameters to a function, we used normal variables and that’s k
 
 <hr>
 
+## sizeof()
+
+It tells you the size in bytes of an element. For example, char is 1, int is 4, double is 8. It can be useful to find the number of elements in an array:
+
+<pre><code>#include < iostream>
+
+main() {
+ double bucky[10];
+ 
+ std::cout << sizeof(bucky) << std::endl; // prints 80 (8, the value of a double, times 10, the number of elements in the array)
+ 
+ std::cout << sizeof(bucky) / sizeof(bucky[0]) << std::endl;
+ 
+}</code></pre>
+
 ## Arrays in functions
 
 <pre><code>#include < iostream>
