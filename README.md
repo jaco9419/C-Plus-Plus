@@ -33,6 +33,29 @@ When we passed parameters to a function, we used normal variables and that’s k
 
 <hr>
 
+## Arrays in functions
+
+<pre><code>#include < iostream>
+using namespace std;
+
+main() {
+ int bucky[3] = {1,2,3};
+ int jessica[6] = {1,2,3,4,5,6};
+ 
+ // Here I don't include []
+ printArray(bucky, 3);
+ printArray(jessica, 6);
+}
+
+Here, it is necessary to include []
+void printArray(int theArray[], int arraySize) {
+
+ for(int i = 0; i < arraySize; i++) {
+  cout << theArray[i] << endl;
+ }
+ 
+}</code></pre>
+
 ## Recursion
 
 <pre><code>#include < iostream>
