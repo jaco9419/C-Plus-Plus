@@ -33,7 +33,24 @@ When we passed parameters to a function, we used normal variables and that’s k
 
 <hr>
 
-## sizeof()
+## 24) Error member selector operator
+
+If I want a pointer to a menthod inside an object, I need to access it using -> instead of .
+
+main.cpp
+
+<pre><code>#include < iostream>
+#include "Sally.h"
+
+int main() {
+ Sally sallyObject;
+ sallyObject.someMethod();
+ 
+ Sally *sallyPointer = $sallyObject;
+ sallyPointer->someMethod();
+}</code></pre>
+
+## 23) sizeof()
 
 It tells you the size in bytes of an element. For example, char is 1, int is 4, double is 8. It can be useful to find the number of elements in an array:
 
@@ -48,7 +65,7 @@ main() {
  
 }</code></pre>
 
-## Arrays in functions
+## 22) Arrays in functions
 
 <pre><code>#include < iostream>
 using namespace std;
@@ -71,7 +88,7 @@ void printArray(int theArray[], int arraySize) {
  
 }</code></pre>
 
-## Recursion
+## 21) Recursion
 
 <pre><code>#include < iostream>
 
