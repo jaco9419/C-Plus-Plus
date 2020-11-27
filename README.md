@@ -6,6 +6,8 @@ Concepts are ordered from last to first. Most of this information is taken direc
 
 ## Some Terms:
 
+#### error member selector operator ->
+
 #### Binary scope resolution operator 
 ::
 
