@@ -6,8 +6,16 @@ Concepts are ordered from last to first. Most of this information is taken direc
 
 ## Some Terms:
 
+#### Abstract Class
+It is a class with a pure virtual function in it.
+
+#### Pure Virtual Functions
+It is a virtual function that is initialized to zero, meaning that it must be overriden.
+
+<code>virtual void attack()=0;</code>
+
 #### Virtual Functions
-For polymorphic classes and objects
+For polymorphic classes and objects. It allows you to either inherit it to the derived classes or for them to override it (which is the most common);
 
 #### Protected
 Everything inside the class, friend functions and derived classes, have acces to what is protected.
