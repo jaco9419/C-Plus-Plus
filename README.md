@@ -2,6 +2,8 @@
 This is an educative repository to practice C++. It may include concepts and small projects.
 Concepts are ordered from last to first. Most of this information is taken directly from Codecadem's C++ learning course.
 
+This [C++ Tutorial From Basic to Advance](https://www.youtube.com/watch?v=mUQZ1qmKlLY&ab_channel=ExternCode) by [Extern Code](https://www.youtube.com/channel/UCfx2dro_w4_MyA19Nm5badg) also helped me put this together.
+
 <hr>
 
 ## Some Terms:
