@@ -6,6 +6,13 @@ Concepts are ordered from last to first. Most of this information is taken direc
 
 ## Some Terms:
 
+#### This Pointer
+<code>this->object</code><br>
+<code>(*this).object</code>
+
+#### Friend Function
+A function has access to the info of a class using the friend keyword
+
 #### Composition
 Having objects or classes inside another class. The Member Initialization List is necessary for this.
 
