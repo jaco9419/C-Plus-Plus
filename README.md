@@ -8,6 +8,12 @@ This [C++ Tutorial From Basic to Advance](https://www.youtube.com/watch?v=mUQZ1q
 
 ## Some Terms:
 
+#### Template Specialization
+It tells you how to handle some specific types of data when using templates.<br>
+<pre><code>template<>
+class Spunky< char>{};
+</code></pre>
+
 #### Abstract Class
 It is a class with a pure virtual function in it.
 
