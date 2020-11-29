@@ -33,6 +33,61 @@ When we passed parameters to a function, we used normal variables and that’s k
 
 <hr>
 
+## 25) Constant Object
+
+We need to build a constant function if we want to use a function for a constant object.
+
+main.cpp
+
+<pre><code>
+#include < iostream>
+#include "Sally.h"
+
+int main() {
+    Sally sallyObj;
+    sallyObj.printShiz();
+    
+    const Sally constObj;
+    constObj.printShiz2();
+}
+</code></pre>
+
+Sally.h
+
+<pre><code>
+#ifdef SALLY_H
+#define SALLY_H
+
+class Sally{
+    public:
+        Sally();
+        void printShiz();
+        void printShiz2() const
+    protected:
+    private:
+}
+
+#endif //SALLY_H
+</code></pre>
+
+Sally.cpp
+
+<pre><code>
+#include "Sally.h"
+#include < iostream>
+
+Sally::Sally(){
+}
+
+void Sally::printShiz(){
+    std::cout << "I'm a regular function!" << std::endl;
+}
+
+void Sally::printShiz2() const{
+    std::cout << "I'm a constant function!" << std::endl;
+}
+</code></pre>
+
 ## 24) Error member selector operator
 
 If I want a pointer to a menthod inside an object, I need to access it using -> instead of .
