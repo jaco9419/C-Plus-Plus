@@ -537,6 +537,9 @@ T get_smallest(T num1, T num2) {
   
 }</code></pre>
 
+If you want more than one new data type:<br>
+<code>template < class FIRST, class SECOND ></code>
+
 ## 12) Function Overload
 
 In a process known as function overloading, you can give multiple C++ functions the same name. Just make sure at least one of these conditions is true:
