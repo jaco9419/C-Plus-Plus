@@ -54,6 +54,47 @@ When we passed parameters to a function, we used normal variables and that’s k
 
 <hr>
 
+## 27) Polymorphism
+
+This allows you to use a function into different derive classes with different outcomes.
+
+<pre><code>#include < iostream>
+
+class Enemy{
+    protected:
+        int attackPower;
+    public:
+        void setAttackPower(int a){
+            attackPower = a;
+        }
+};
+
+class Ninja: public Enemy{
+    public:
+        void attack(){
+            std::cout << "Ninja Chop! -" << attackPower << std::endl;
+        }
+};
+
+class Monster: public Enemy{
+    public:
+        void attack(){
+            std::cout << "Monster Bite! -" << attackPower << std::endl;
+        }
+};
+
+int main() {
+    Ninja sasuke;
+    Monster mummy;
+    Enemy *enemy1 = &sasuke;
+    Enemy *enemy2 = &mummy;
+    enemy1->setAttackPower(10);
+    enemy2->setAttackPower(30);
+    sasuke.attack(); // It prints Ninja Chop! -10
+    mummy.attack(); // It prints Monster Bite! -30
+}
+</code></pre>
+
 ## 26) Member Initialization List
 
 A member is a variable in a class. If we need a const variable inside a class, it is necessary to initialize the member's values in between the parentheses and curly braces when building the constructors using a colon and separating by commas. It is also used when dealing with Compositon:
@@ -108,7 +149,7 @@ class Sally{
         void printShiz2() const
     protected:
     private:
-}
+};
 
 #endif //SALLY_H
 </code></pre>
