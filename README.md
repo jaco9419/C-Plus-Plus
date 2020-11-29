@@ -6,6 +6,9 @@ Concepts are ordered from last to first. Most of this information is taken direc
 
 ## Some Terms:
 
+#### Virtual Functions
+For polymorphic classes and objects
+
 #### Protected
 Everything inside the class, friend functions and derived classes, have acces to what is protected.
 
