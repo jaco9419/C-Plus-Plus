@@ -6,6 +6,9 @@ Concepts are ordered from last to first. Most of this information is taken direc
 
 ## Some Terms:
 
+#### Composition
+Having objects in a class
+
 #### error member selector operator ->
 
 #### Binary scope resolution operator 
