@@ -6,8 +6,11 @@ Concepts are ordered from last to first. Most of this information is taken direc
 
 ## Some Terms:
 
+#### Protected
+Everything inside the class, friend functions and derived classes, have acces to what is protected.
+
 #### Inheritance
-It allows us to inherite everything that is public from a base class to a derived class.<br>
+It allows us to inherite everything that is public or protected from a base class to a derived class.<br>
 <code>class Daughter: public Mother</code>
 
 #### Operator Overloading
