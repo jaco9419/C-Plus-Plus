@@ -33,6 +33,28 @@ When we passed parameters to a function, we used normal variables and that’s k
 
 <hr>
 
+## 26 Member Initialization List
+
+A member is a variable in a class. If we need a const variable inside a class, it is necessary to initialize the member's values in between the parentheses and curly braces when building the constructors using a colon and separating by commas:
+
+Sally.cpp
+
+<pre><code>
+#include "Sally.h"
+#include < iostream>
+
+Sally::Sally(int a, int b)
+: regVar(a),
+constVar(b)
+{
+}
+
+void Sally::print(){
+    std::cout << "regVar equals: " << regVar << std::endl;
+    std::cout << "constVar equals: " << constVar << std::endl;
+}
+</code></pre>
+
 ## 25) Constant Object
 
 We need to build a constant function if we want to use a function for a constant object.
