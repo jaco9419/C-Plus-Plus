@@ -13,6 +13,8 @@ Everything inside the class, friend functions and derived classes, have acces to
 It allows us to inherite everything that is public or protected from a base class to a derived class.<br>
 <code>class Daughter: public Mother</code>
 
+<strong>Note:</strong> The constructors and deconstructors from the base class won't be inherited in the derived classes; however, they will run without calling them or building a base class object.
+
 #### Operator Overloading
 
 #### This Pointer
@@ -52,7 +54,7 @@ When we passed parameters to a function, we used normal variables and that’s k
 
 <hr>
 
-## 26 Member Initialization List
+## 26) Member Initialization List
 
 A member is a variable in a class. If we need a const variable inside a class, it is necessary to initialize the member's values in between the parentheses and curly braces when building the constructors using a colon and separating by commas. It is also used when dealing with Compositon:
 
