@@ -7,7 +7,7 @@ Concepts are ordered from last to first. Most of this information is taken direc
 ## Some Terms:
 
 #### Composition
-Having objects in a class
+Having objects or classes inside another class. The Member Initialization List is necessary for this.
 
 #### error member selector operator ->
 
@@ -38,7 +38,7 @@ When we passed parameters to a function, we used normal variables and that’s k
 
 ## 26 Member Initialization List
 
-A member is a variable in a class. If we need a const variable inside a class, it is necessary to initialize the member's values in between the parentheses and curly braces when building the constructors using a colon and separating by commas:
+A member is a variable in a class. If we need a const variable inside a class, it is necessary to initialize the member's values in between the parentheses and curly braces when building the constructors using a colon and separating by commas. It is also used when dealing with Compositon:
 
 Sally.cpp
 
