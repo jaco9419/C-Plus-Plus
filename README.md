@@ -6,6 +6,12 @@ Concepts are ordered from last to first. Most of this information is taken direc
 
 ## Some Terms:
 
+#### Inheritance
+It allows us to inherite everything that is public from a base class to a derived class.<br>
+<code>class Daughter: public Mother</code>
+
+#### Operator Overloading
+
 #### This Pointer
 <code>this->object</code><br>
 <code>(*this).object</code>
